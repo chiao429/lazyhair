@@ -11,7 +11,7 @@
 
 .address_section{
     background-image: url(./image/img4.png);
-    background-position: 68vw;
+    background-position: 72vw;
     background-repeat: no-repeat;
     background-size: 400px;
 }
@@ -55,6 +55,13 @@
     padding-bottom: 50px;
 }
 
+.join2_section{
+    background-image: url(./image/welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: top center;
+    padding-bottom: 50px;
+}
 .join_section__intro{
     box-shadow: 0 2px 28px 0 rgba(0,0,0,0.12);
     margin-top: 180px;

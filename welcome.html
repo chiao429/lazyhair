@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Hair</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar sticky-top d-flex justify-content-between" >
+        <img class="navbar__user change_tab" height="60" src="./image/logo.png">
+        <a class="navbar__logo navbar-brand to_main_tab"  height="80" href="#">Lazy Hair</a>
+        <img class="navbar__bag change_tab" height="40" src="./image/shopping-bag.svg">
+    </nav>
+    <div class="join2_section pt-3 px-3 pb-5">
+            <div  >
+               
+                <div class="card-body px-3" style="margin-bottom: 150px;"> 
+                    <h4 class="card-title"> </h4>
+                    <p class="card-text"> </p>
+                    <p class="card-text"></p>
+                    <p class="card-text"></p>
+                    
+                   
+                </div>
+            </div>
+        </div>
+        <footer class="footer_section p-3 text-center">
+            <div class="footer_section__dowload d-flex justify-content-around mb-2">
+                <a  target="_blank"><img src="./image/download-on-the-app-store.png" height="50px"></a>
+                <a  target="_blank"><img src="./image/google-play-badge-ch.png" height="50px"></a>
+            </div>
+            <div class="footer_section__media d-flex justify-content-center align-items-center">
+                <div>Follow us on</div>
+                <a class="px-3"   target="_blank"><img src="./image/icons8-facebook.svg" width="40px"></a>
+                <a   target="_blank"><img src="./image/icons8-instagram-old.svg" width="40px"></a>
+            </div>
+            <hr class="my-2" color="#fff">
+            <div>© 2020 LazyHair</div>
+        </footer>
+    </div>
+    <div id="food_page" style="display: none">
+        <div class="food_section pt-3 px-3 pb-5">
+            <ul class="list_wraper list-group">
+                <a class="food_item list-group-item list-group-item-action mb-3 rounded" v-for='food in food_data' data-toggle="modal" data-target="#exampleModal" v-on:click="index_of_click=food_data.indexOf(food)">
+                    <h4 class="font-weight-bold">{{food.name}}</h2><hr class="my-1">
+                    <p class="mb-0"><b>營業時間：</b>{{food.open_time}}</p>
+                    <p class="mb-0"><b>電話：</b>{{food.tel.replace('+886-',0)}}</p>
+                    <p class="mb-0"><b>地址：</b>{{food.address.replace(/^7\d+/,'')}}</p>
+                </a>
+            </ul>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">{{food_data[index_of_click].name}}-簡介</h4>
+                </div>
+                <div class="modal-body">
+                    {{food_data[index_of_click].introduction}}
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                    <span v-for='category in food_data[index_of_click].category'>{{category}}</span>
+                    <button type="button" class="btn ml-auto font-weight-bold" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</body>
+</html>
