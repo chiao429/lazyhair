@@ -1,0 +1,110 @@
+.btn{
+    background-color: #002E45;
+    color: #fff;
+}
+
+.navbar{
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+}
+
+.address_section{
+    background-image: url(./image/img4.png);
+    background-position: 68vw;
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+
+.address_section__slogan h1{
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.navbar__logo{
+    color: #002E45;
+    font-size: 1.4em;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.button{
+    background-color: #002E45;
+    color: white;
+    border-radius: 0%;
+    height: 64px;
+    font-weight: 600;
+    border: none;
+    line-height: 48px;
+}
+
+.search__input input{
+    border-radius: 0%;
+    height: 64px;
+    box-shadow: none;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.12);
+}
+
+.join_section{
+    background-image: url(./image/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: top center;
+    padding-bottom: 50px;
+}
+
+.join_section__intro{
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.12);
+    margin-top: 180px;
+    border-radius: 0;
+    border: none;
+}
+
+.card-body .button{
+    height: 48px;
+    line-height: 32px;
+}
+
+.swiper-container {
+    height: 272px;
+}  
+
+.swiper_city_name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 16px;
+    color: #fff;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.corporate_section{
+    background-image: url(./image/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: top center;
+}
+
+.corporate_section__intro{
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,0.12);
+    margin-top: 180px;
+    border-radius: 0;
+    border: none;
+}
+
+.footer_section{
+    background-color: #002E45;
+    color: white;
+}
+
+.food_item{
+    box-shadow: 0 4px 14px 0 rgba(0,0,0,0.12);
+}
+
+#food_page{
+    font-family: '微軟正黑體';
+}
